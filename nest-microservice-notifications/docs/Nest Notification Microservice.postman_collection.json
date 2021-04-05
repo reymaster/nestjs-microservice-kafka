@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "626a7509-a35f-4924-a608-0f6ce5e24c0c",
+		"name": "Nest Notification Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"af5d3b91-f74f-4630-8f60-404659971d66\",\n    \"name\": \"Reinaldo Nascimento\",\n    \"email\": \"reymaster@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/notifications/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notifications",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send SMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"af5d3b91-f74f-4630-8f60-404659971d66\",\n    \"name\": \"Reinaldo Nascimento\",\n    \"phone\": \"5531995510564\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/notifications/sms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notifications",
+						"sms"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
